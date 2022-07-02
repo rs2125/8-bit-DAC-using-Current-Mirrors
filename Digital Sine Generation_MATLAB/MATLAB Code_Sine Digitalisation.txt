@@ -1,0 +1,5 @@
+vin = sin(2*pi*11*(0 : 2^12-1)/(2^12));
+din = quant(vin, 2^(-7));
+in = (din+1).*127.5;
+%plot((1:4096),in)
+b=dec2bin(in,8);
